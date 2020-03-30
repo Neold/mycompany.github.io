@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+} 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+
+header {
+    background-color: black;
+    width: 100%;
+}
+.logo {
+    float: left;
+    font-size: 24px;
+    color: white;
+    margin-left: 12%;
+    margin-top: 56px;
+    font-weight: 800;
+
+}
+nav {
+    float: right;
+    margin-top: 56px;
+    margin-right: 12%;
+}
+nav a {
+    color: white;
+    text-align: center;
+    padding-bottom: 12px;
+    padding: 16px;
+    font-weight: bold;
+    width: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+nav a:hover {
+    border-bottom: 3px solid #fcac45;
+}
+
+
+.name-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    padding-top: 210px;
+    padding-bottom: 420px;
+}
+.name {
+    text-align: center;
+    width: 687px;
+    height: 77px;
+    margin: auto;
+    color: #999999;
+}
+.name h1 span {
+    color: #fcac45;
+    font-size: 32px;
+}
+.name p {
+    margin-top: 23px;
+}
+.name-p {
+    color: #c3c3c3;
+    font-weight: bold;
+}
+
+
+.about-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    margin: 0 auto;
+}
+.about-logo {
+    width: 510px;
+    margin-top: 104px;
+    margin-bottom: 102px;
+}
+.about-info {
+    width: 450px;
+    margin-left: 20%;
+    margin-top: 136px;
+}
+.about-info h1 {
+    font-size: 25px;
+    border-bottom: 3px solid #fcac45;
+    display: inline-block;
+    padding-bottom: 22px;
+    font-weight: 400;
+}
+.about-h1 {
+    font-weight: 700;
+}
+.about-info p {
+    margin-top: 32px;
+}
+.about-info p {
+    color: #656565;
+}
+.about-info ul {
+    margin-top: 48px;
+}
+.about-info ul li {
+    background: url("image/li-about.png") 0px no-repeat;
+    padding-left: 25px;
+    margin: 21px;
+    color: #656565;
+    font-style: italic;
+}
+.about-info span {
+    font-style: normal;
+    font-weight: bold;
+}
+.li-about {
+    vertical-align: bottom;
+    padding-right: 12px;
+}
+
+
+.our-block {
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 117px;
+}
+.our-block h1 {
+    text-align: center;
+}
+.line {
+    width: 100px;
+    border-bottom: 4px solid #fcac45;
+    margin: 30px auto;
+}
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 76%;
+    margin: 107px auto;
+}
+.our-people {
+    text-align: center;
+    width: 250px;
+    margin-bottom: 50px;
+}
+.our-info {
+    margin-top: 22px;
+}
+.our-p1 {
+    padding-bottom: 30px;
+}
+
+
+.serv-block {
+    padding-top: 100px;
+}
+.serv-block h1 {
+    color: black;
+    text-align: center;
+}
+.serv-people {
+    width: 257px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.galery-logo {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-style: italic;
+    color: #636363;
+}
+.serv-people p {
+    padding-top: 21px;
+}
+
+
+.client-block {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 167px;
+}
+.client-logo {
+    margin: auto;
+    padding-top: 115px;
+    padding-bottom: 110px;
+    width: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.client-logo img {
+    margin-bottom: 100px;
+}
+
+.galery-block {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.galery-block h1 {
+    color: black;
+    text-align: center;
+}
+.block img {
+    margin-bottom: 50px;
+}
+/*Эффект тумана на картинках*/
+.opacity img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+.opacity img:hover {
+-webkit-filter: opacity(25%);
+}
+/*Эффект кручения на Картинках*/
+.morph img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }.morph img:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+/*"Эффект поворота на картинках"*/
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    }
+
+
+.test-block {
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 170px;
+    text-align: center;
+    color: white;
+}
+.test-logo {
+    width: 62%;
+    margin: auto;
+}
+.test-logo p:first-child {
+    text-transform: uppercase;
+    padding-top: 117px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #e7e7e7;
+}
+.test-logo p:last-child {
+    color: #b2b2b2;
+    font-weight: bold;
+}
+.test1 {
+    font-weight: normal;
+}
+
+
+.contact-block {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.contact-logo {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin: auto;
+    font-style: italic;
+    color: #636363;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    color: #636363;
+}
+
+.contact1 {
+    text-align: left;
+    width: 366px;
+}
+
+.contact2 {
+    padding-top: 31px;
+    flex-basis: 100%;
+    text-align: left;
+}
+
+#form1 {
+    width: 100%;
+    height: 41px;
+}
+#form2 {
+    height: 167px;
+    width: 100%;
+}
+.send {
+    padding-top: 31px;
+    float: right;
+}
+
+footer {
+    background-color: #222222;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 14%;
+    margin: auto;
+}
+.icon img {
+    padding-bottom: 20px;
+}
+.myinfo {
+    font-style: italic;
+    margin: auto;
+    width: 60%;
+    color: #b2b2b2;
+    text-align: right;
+}
